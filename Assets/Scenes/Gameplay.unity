@@ -1487,7 +1487,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 872995385}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1374463612}
+        m_TargetAssemblyTypeName: GameOverHandler, Assembly-CSharp
+        m_MethodName: ContinueButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &872995385
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6835,6 +6847,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf58cd430a1d80944999701523e2eac6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 303423952}
+  continueButton: {fileID: 872995384}
   gameOverText: {fileID: 1984215131}
   scoreSystem: {fileID: 230910716}
   gameOverDisplay: {fileID: 266679285}
@@ -7123,6 +7137,55 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2094858127}
   m_CullTransparentMesh: 1
+--- !u!1 &2140781848
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2140781850}
+  - component: {fileID: 2140781849}
+  m_Layer: 0
+  m_Name: AdManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2140781849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140781848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 759102cf872b21e4ebf0151f2bf5b9cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  androidGameId: 5802082
+  iosGameId: 5802083
+  testMode: 1
+  androidAdUnitId: Rewarded_Android
+  iosAdUnitId: Rewarded_iOS
+--- !u!4 &2140781850
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140781848}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -7136,3 +7199,4 @@ SceneRoots:
   - {fileID: 303423953}
   - {fileID: 687944069}
   - {fileID: 230910715}
+  - {fileID: 2140781850}
